@@ -8,6 +8,7 @@ interface EditorNavbarProps {
   onToggleSidebar: () => void;
 }
 
+/** Renders the editor navbar with a toggle callback and an icon reflecting sidebar visibility. */
 export function EditorNavbar({
   isSidebarOpen,
   onToggleSidebar,

@@ -38,3 +38,4 @@ Update this file whenever the current phase, active feature, or implementation s
 
 - Feature 01 completed on 2026-10-04. All components import, cn() works, no light styling appears, build clean.
 - Feature 02 completed on 2026-10-04. Navbar, sidebar, dialog pattern ready. Build clean.
+- PR #1 docstring coverage: added JSDoc to all 30 component functions in the PR; runtime behavior is unchanged.

@@ -10,6 +10,7 @@ interface ProjectSidebarProps {
   onClose: () => void;
 }
 
+/** Renders the project sidebar with controlled visibility, a close callback, and placeholder project tabs. */
 export function ProjectSidebar({ isOpen, onClose }: ProjectSidebarProps) {
   return (
     <aside

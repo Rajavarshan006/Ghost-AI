@@ -4,6 +4,7 @@ import { Tabs as TabsPrimitive } from "@base-ui/react/tabs"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
 
+/** Renders the Base UI tabs root with layout styles based on the supplied orientation. */
 function Tabs({
   className,
   orientation = "horizontal",
@@ -37,6 +38,7 @@ const tabsListVariants = cva(
   }
 )
 
+/** Renders a tab list using the default or line visual variant. */
 function TabsList({
   className,
   variant = "default",
@@ -52,6 +54,7 @@ function TabsList({
   )
 }
 
+/** Renders a tab control with active, focus, and disabled styles. */
 function TabsTrigger({ className, ...props }: TabsPrimitive.Tab.Props) {
   return (
     <TabsPrimitive.Tab
@@ -68,6 +71,7 @@ function TabsTrigger({ className, ...props }: TabsPrimitive.Tab.Props) {
   )
 }
 
+/** Renders the content panel associated with a tab value. */
 function TabsContent({ className, ...props }: TabsPrimitive.Panel.Props) {
   return (
     <TabsPrimitive.Panel

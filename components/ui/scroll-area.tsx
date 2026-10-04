@@ -4,6 +4,7 @@ import * as React from "react"
 import { ScrollArea as ScrollAreaPrimitive } from "@base-ui/react/scroll-area"
 import { cn } from "cn"
 
+/** Renders a scrollable viewport with a vertical scrollbar and a scrollbar corner. */
 function ScrollArea({
   className,
   children,
@@ -27,6 +28,7 @@ function ScrollArea({
   )
 }
 
+/** Renders a styled scrollbar and thumb, defaulting to vertical orientation. */
 function ScrollBar({
   className,
   orientation = "vertical",

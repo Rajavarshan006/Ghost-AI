@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   description: "Real-time collaborative system design workspace",
 };
 
+/** Wraps page content in the root document with Geist fonts and the dark theme. */
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html

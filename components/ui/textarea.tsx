@@ -1,6 +1,7 @@
 import * as React from "react"
 import { cn } from "cn"
 
+/** Renders a textarea that sizes to its content with shared focus and validation styles. */
 function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
   return (
     <textarea

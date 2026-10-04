@@ -2,6 +2,7 @@ import * as React from "react"
 import { Input as InputPrimitive } from "@base-ui/react/input"
 import { cn } from "cn"
 
+/** Renders a Base UI input with shared focus, disabled, and validation styles. */
 function Input({ className, type, ...props }: React.ComponentProps<"input">) {
   return (
     <InputPrimitive

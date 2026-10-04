@@ -1,6 +1,7 @@
 import * as React from "react"
 import { cn } from "cn"
 
+/** Renders a card container with default or compact spacing for its sections. */
 function Card({
   className,
   size = "default",
@@ -19,6 +20,7 @@ function Card({
   )
 }
 
+/** Arranges card heading content and an optional action in a responsive grid. */
 function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -32,6 +34,7 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+/** Renders the card title with typography that adapts to the card size. */
 function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -45,6 +48,7 @@ function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+/** Renders muted supporting text for a card. */
 function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -55,6 +59,7 @@ function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+/** Positions an action in the upper-right area of the card header. */
 function CardAction({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -68,6 +73,7 @@ function CardAction({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+/** Renders the card body with padding matched to the card size. */
 function CardContent({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -78,6 +84,7 @@ function CardContent({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+/** Renders a bordered footer row with spacing matched to the card size. */
 function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
